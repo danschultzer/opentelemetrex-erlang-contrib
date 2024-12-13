@@ -6,4 +6,4 @@ Forked from [`:opentelemetry_phoenix` `2.0.1`](https://github.com/open-telemetry
 
 ### Changed
 
-- Initial release
+- Added `http.route` attribute for LiveView spans
