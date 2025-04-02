@@ -4,12 +4,4 @@ Tracks changes to this repository's settings by admins/maintainers per [communit
 
 ## Changelog
 
-### 2023-11-04
-
-Updating settings to follow the community guidelines
-
-* General
-  * Disabled wikis
-  * Automatically delete head branches - checked
-* Branches
-  * Added rule for `renovate/**/**` 
+None

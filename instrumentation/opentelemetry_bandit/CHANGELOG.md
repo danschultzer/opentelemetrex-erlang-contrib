@@ -1,5 +1,7 @@
 # Changelog
 
-## [0.1.4] - 2023-12-14
+## v0.1.0
+
 ### Changed
-- Prepare to the public release
+
+- Initial release

@@ -1,6 +1,6 @@
-{application, opentelemetry_elli,
+{application, opentelemetrex_elli,
  [{description, "Elli middleware for tracing and stats with OpenTelemetry"},
-  {vsn, "0.3.0"},
+  {vsn, "0.1.0"},
   {registered, []},
   {applications,
    [kernel,

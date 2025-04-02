@@ -1,18 +1,18 @@
 defmodule OpentelemetryOban.MixProject do
   use Mix.Project
 
-  @version "1.1.1"
+  @version "1.0.0"
 
   def project do
     [
-      app: :opentelemetry_oban,
+      app: :opentelemetrex_oban,
       version: @version,
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       docs: [
         source_url_pattern:
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/blob/main/instrumentation/opentelemetry_oban/%{path}#L%{line}",
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/blob/main/instrumentation/opentelemetry_oban/%{path}#L%{line}",
         main: "OpentelemetryOban",
         extras: ["README.md"]
       ],
@@ -23,14 +23,14 @@ defmodule OpentelemetryOban.MixProject do
         maintainers: ["Glia TechMovers"],
         licenses: ["Apache-2.0"],
         links: %{
-          "GitHub" => "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+          "GitHub" => "https://github.com/danschultzer/opentelemetrex-erlang-contrib",
           "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
           "OpenTelemetry.io" => "https://opentelemetry.io"
         },
         files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG*)
       ],
       source_url:
-        "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_oban"
+        "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_oban"
     ]
   end
 

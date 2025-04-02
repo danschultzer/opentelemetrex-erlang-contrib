@@ -1,12 +1,12 @@
 defmodule OpentelemetryHTTPoison.MixProject do
   use Mix.Project
 
-  @source_url "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_httpoison"
-  @version "1.3.0"
+  @source_url "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_httpoison"
+  @version "1.0.0"
 
   def project do
     [
-      app: :opentelemetry_httpoison,
+      app: :opentelemetrex_httpoison,
       version: @version,
       elixir: "~> 1.11",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -55,8 +55,8 @@ defmodule OpentelemetryHTTPoison.MixProject do
       links: %{
         "GitHub" => @source_url,
         "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-        "OpenTelemetry Erlang Contrib" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib",
         "OpenTelemetry.io" => "https://opentelemetry.io"
       }
     ]

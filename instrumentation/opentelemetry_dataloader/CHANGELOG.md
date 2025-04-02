@@ -2,6 +2,6 @@
 
 ## 0.1.0
 
-### Features
+### Changed
 
 - Initial release
