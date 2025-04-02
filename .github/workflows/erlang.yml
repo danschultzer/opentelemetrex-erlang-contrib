@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - "main"
+      - run-all-tests
 
 concurrency:
   group: ci-${{ github.head_ref || github.run_id }}-erlang
@@ -29,7 +30,6 @@ jobs:
 
   opentelemetry-aws-xray:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'erlang') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_aws_xray'))
     env:
       app: "opentelemetry_aws_xray"
     defaults:
@@ -61,7 +61,6 @@ jobs:
 
   opentelemetry-cowboy:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'erlang') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_cowboy'))
     env:
       app: "opentelemetry_cowboy"
     defaults:
@@ -93,7 +92,6 @@ jobs:
 
   opentelemetry-elli:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'erlang') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_elli'))
     env:
       app: "opentelemetry_elli"
     defaults:
@@ -125,7 +123,6 @@ jobs:
 
   opentelemetry-grpcbox:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'erlang') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_grpcbox'))
     env:
       app: "opentelemetry_grpcbox"
     defaults:
@@ -157,7 +154,6 @@ jobs:
 
   opentelemetry-telemetry:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'erlang') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_telemetry'))
     env:
       app: "opentelemetry_telemetry"
     defaults:
@@ -189,7 +185,6 @@ jobs:
 
   otel-http:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'erlang') && contains(github.event.pull_request.labels.*.name, 'otel_http'))
     env:
       app: "otel_http"
     defaults:

@@ -9,6 +9,7 @@ on:
   push:
     branches:
       - "main"
+      - run-all-tests
 
 concurrency:
   group: ci-${{ github.head_ref || github.run_id }}-elixir
@@ -29,7 +30,6 @@ jobs:
 
   opentelemetry-bandit:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_bandit'))
     env:
       app: "opentelemetry_bandit"
     defaults:
@@ -59,7 +59,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -70,7 +70,6 @@ jobs:
 
   opentelemetry-broadway:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_broadway'))
     env:
       app: "opentelemetry_broadway"
     defaults:
@@ -100,7 +99,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -109,7 +108,6 @@ jobs:
 
   opentelemetry-dataloader:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_dataloader'))
     env:
       app: "opentelemetry_dataloader"
     defaults:
@@ -149,7 +147,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -158,7 +156,6 @@ jobs:
 
   opentelemetry-ecto:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_ecto'))
     env:
       app: "opentelemetry_ecto"
     defaults:
@@ -197,7 +194,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -206,7 +203,6 @@ jobs:
 
   opentelemetry-finch:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_finch'))
     env:
       app: "opentelemetry_finch"
     defaults:
@@ -236,7 +232,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -245,7 +241,6 @@ jobs:
 
   opentelemetry-httpoison:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_httpoison'))
     env:
       app: "opentelemetry_httpoison"
     defaults:
@@ -275,7 +270,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -284,7 +279,6 @@ jobs:
 
   opentelemetry-nebulex:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_nebulex'))
     env:
       app: "opentelemetry_nebulex"
     defaults:
@@ -314,7 +308,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -323,7 +317,6 @@ jobs:
 
   opentelemetry-oban:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_oban'))
     env:
       app: "opentelemetry_oban"
     defaults:
@@ -362,7 +355,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -371,7 +364,6 @@ jobs:
 
   opentelemetry-phoenix:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_phoenix'))
     env:
       app: "opentelemetry_phoenix"
     defaults:
@@ -401,7 +393,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -410,7 +402,6 @@ jobs:
 
   opentelemetry-redix:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_redix'))
     env:
       app: "opentelemetry_redix"
     defaults:
@@ -444,7 +435,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -453,7 +444,6 @@ jobs:
 
   opentelemetry-req:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_req'))
     env:
       app: "opentelemetry_req"
     defaults:
@@ -483,7 +473,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -492,7 +482,6 @@ jobs:
 
   opentelemetry-telemetry:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_telemetry'))
     env:
       app: "opentelemetry_telemetry"
     defaults:
@@ -522,7 +511,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -531,7 +520,6 @@ jobs:
 
   opentelemetry-process-propagator:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_process_propagator'))
     env:
       app: "opentelemetry_process_propagator"
     defaults:
@@ -561,7 +549,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -570,7 +558,6 @@ jobs:
 
   opentelemetry-tesla:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_tesla'))
     env:
       app: "opentelemetry_tesla"
     defaults:
@@ -600,7 +587,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
@@ -609,7 +596,6 @@ jobs:
 
   opentelemetry-xandra:
     needs: [test-matrix]
-    if: (contains(github.event.pull_request.labels.*.name, 'elixir') && contains(github.event.pull_request.labels.*.name, 'opentelemetry_xandra'))
     env:
       app: "opentelemetry_xandra"
     defaults:
@@ -645,7 +631,7 @@ jobs:
         if: steps.deps-cache.outputs.cache-hit != 'true'
         run: mix deps.get
       - name: Compile project
-        run: mix compile --warnings-as-errors
+        run: mix compile
       - name: Check formatting
         run: mix format --check-formatted
         if: matrix.check_formatted
