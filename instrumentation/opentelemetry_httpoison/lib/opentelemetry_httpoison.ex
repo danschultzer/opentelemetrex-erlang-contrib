@@ -64,7 +64,7 @@ defmodule OpentelemetryHTTPoison do
   :ok
   """
   def setup(opts \\ []) do
-    Logger.warning("setup/1 is deprecated, use `config :opentelemetry_httpoison, ...` instead")
+    Logger.warning("setup/1 is deprecated, use `config :opentelemetrex_httpoison, ...` instead")
 
     Configuration.setup(opts)
 

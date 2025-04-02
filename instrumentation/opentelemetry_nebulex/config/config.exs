@@ -10,11 +10,11 @@ import Config
 
 # You can configure your application as:
 #
-#     config :opentelemetry_nebulex, key: :value
+#     config :opentelemetrex_nebulex, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:opentelemetry_nebulex, :key)
+#     Application.get_env(:opentelemetrex_nebulex, :key)
 #
 # You can also configure a third-party app:
 #
