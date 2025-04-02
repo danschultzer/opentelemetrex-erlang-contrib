@@ -1,36 +1,25 @@
 defmodule OpentelemetryOban.MixProject do
   use Mix.Project
 
-  @version "1.1.1"
+  @version "1.0.0"
 
   def project do
     [
-      app: :opentelemetry_oban,
+      app: :opentelemetrex_oban,
       version: @version,
       elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       docs: [
         source_url_pattern:
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/blob/main/instrumentation/opentelemetry_oban/%{path}#L%{line}",
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/blob/main/instrumentation/opentelemetry_oban/%{path}#L%{line}",
         main: "OpentelemetryOban",
         extras: ["README.md"]
       ],
       elixirc_paths: elixirc_paths(Mix.env()),
-      package: [
-        name: "opentelemetry_oban",
-        description: "OpenTelemetry tracing for Oban",
-        maintainers: ["Glia TechMovers"],
-        licenses: ["Apache-2.0"],
-        links: %{
-          "GitHub" => "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
-          "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-          "OpenTelemetry.io" => "https://opentelemetry.io"
-        },
-        files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG*)
-      ],
+      package: package(),
       source_url:
-        "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_oban"
+        "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_oban"
     ]
   end
 
@@ -38,6 +27,22 @@ defmodule OpentelemetryOban.MixProject do
   def application do
     [
       extra_applications: []
+    ]
+  end
+
+  defp package do
+    [
+      description: "OpenTelemetry tracing for Oban",
+      licenses: ["Apache-2.0"],
+      links: %{
+        "GitHub" =>
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_oban",
+        "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib",
+        "OpenTelemetry.io" => "https://opentelemetry.io"
+      },
+      files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG*)
     ]
   end
 

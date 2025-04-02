@@ -1,11 +1,11 @@
 defmodule OpentelemetryBandit.MixProject do
   use Mix.Project
 
-  @version "0.2.0"
+  @version "0.1.0"
 
   def project do
     [
-      app: :opentelemetry_bandit,
+      app: :opentelemetrex_bandit,
       version: @version,
       elixir: "~> 1.14",
       aliases: aliases(),
@@ -28,11 +28,13 @@ defmodule OpentelemetryBandit.MixProject do
         "coveralls.cobertura": :test
       ],
       docs: [
-        main: "OpentelemetryBandit",
         source_url_pattern:
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/blob/main/instrumentation/opentelemetry_bandit/%{path}#L%{line}",
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/blob/main/instrumentation/opentelemetry_bandit/%{path}#L%{line}",
+        main: "OpentelemetryBandit",
         extras: []
-      ]
+      ],
+      source_url:
+        "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_bandit"
     ]
   end
 
@@ -52,14 +54,13 @@ defmodule OpentelemetryBandit.MixProject do
   defp package do
     [
       files: ~w(lib .formatter.exs mix.exs LICENSE* README* CHANGELOG*),
-      maintainers: ["Artem Solomatin", "Bryan Naegele"],
       licenses: ["Apache-2.0"],
       links: %{
         "GitHub" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_bandit",
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_bandit",
         "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-        "OpenTelemetry Erlang Contrib" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib",
         "OpenTelemetry.io" => "https://opentelemetry.io"
       }
     ]

@@ -1,9 +1,9 @@
 # Changelog
 
-## 0.1.1
-
-  * Fix issue with Broadway messages with non-binary data in them.
-
 ## 0.1.0
 
-  * Initial release
+Forked from [`:opentelemetry_broadway` `0.2.0`](https://github.com/open-telemetry/opentelemetry-erlang-contrib/releases/tag/opentelemetry-broadway-v0.2.0).
+
+### Changed
+
+- Initial release

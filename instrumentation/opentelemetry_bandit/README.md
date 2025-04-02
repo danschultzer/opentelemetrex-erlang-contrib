@@ -1,7 +1,7 @@
 # OpentelemetryBandit
 
 [![EEF Observability WG project](https://img.shields.io/badge/EEF-Observability-black)](https://github.com/erlef/eef-observability-wg)
-[![Hex.pm](https://img.shields.io/hexpm/v/opentelemetry_bandit)](https://hex.pm/packages/opentelemetry_bandit)
+[![Hex.pm](https://img.shields.io/hexpm/v/opentelemetrex_bandit)](https://hex.pm/packages/opentelemetrex_bandit)
 ![Build Status](https://github.com/opentelemetry-beam/opentelemetry_bandit/workflows/Tests/badge.svg)
 
 Telemetry handler that creates Opentelemetry spans from [Bandit events](https://hexdocs.pm/bandit/Bandit.Telemetry.html#content).

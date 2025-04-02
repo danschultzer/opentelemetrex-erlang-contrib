@@ -1,11 +1,11 @@
 defmodule OpentelemetryEcto.MixProject do
   use Mix.Project
 
-  @version "1.2.0"
+  @version "1.0.0"
 
   def project do
     [
-      app: :opentelemetry_ecto,
+      app: :opentelemetrex_ecto,
       description: description(),
       version: @version,
       elixir: "~> 1.11",
@@ -15,10 +15,10 @@ defmodule OpentelemetryEcto.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
       source_url:
-        "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_ecto",
+        "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_ecto",
       docs: [
         source_url_pattern:
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/blob/main/instrumentation/opentelemetry_ecto/%{path}#L%{line}",
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/blob/main/instrumentation/opentelemetry_ecto/%{path}#L%{line}",
         main: "OpentelemetryEcto",
         extras: ["README.md"]
       ]
@@ -35,9 +35,10 @@ defmodule OpentelemetryEcto.MixProject do
       licenses: ["Apache-2.0"],
       links: %{
         "GitHub" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_ecto",
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_ecto",
         "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-        "OpenTelemetry Erlang Contrib" => "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib",
         "OpenTelemetry.io" => "https://opentelemetry.io"
       }
     ]
