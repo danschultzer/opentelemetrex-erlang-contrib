@@ -1,8 +1,8 @@
 # OpentelemetryHTTPoison
 
-[![Module Version](https://img.shields.io/hexpm/v/opentelemetry_httpoison.svg)](https://hex.pm/packages/opentelemetry_httpoison)
+[![Module Version](https://img.shields.io/hexpm/v/opentelemetry_httpoison.svg)](https://hex.pm/packages/opentelemetrex_httpoison)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg)](https://hexdocs.pm/opentelemetry_httpoison/)
-[![Total Downloads](https://img.shields.io/hexpm/dt/opentelemetry_httpoison.svg)](https://hex.pm/packages/opentelemetry_httpoison)
+[![Total Downloads](https://img.shields.io/hexpm/dt/opentelemetry_httpoison.svg)](https://hex.pm/packages/opentelemetrex_httpoison)
 
 OpentelemetryHTTPoison is a [opentelemetry-instrumented](https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/glossary.md#instrumented-library) wrapper around HTTPoison.
 
@@ -20,7 +20,7 @@ OpentelemetryHTTPoison.get!(url, headers, opts)
 
 ## Configuration
 
-OpentelemetryHTTPoison can be configured through `config :opentelemetry_httpoison`. The configurable options are:
+OpentelemetryHTTPoison can be configured through `config :opentelemetrex_httpoison`. The configurable options are:
 
 * `:ot_attributes`: what default Open Telemetry metadata attributes will be sent per request
 
@@ -62,7 +62,7 @@ If the atom `:ignore` is provided then the `http.route` attribute is ignored ent
 In the below examples, `OpentelemetryHTTPoison.get!/3` is used for the sake of simplicity but other functions derived from `OpentelemetryHTTPoison.request/1` can be used
 
 ```elixir
-config :opentelemetry_httpoison,
+config :opentelemetrex_httpoison,
   ot_attributes: [{"service.name", "users"}]
 
 OpentelemetryHTTPoison.get!(
@@ -98,7 +98,7 @@ In the example above:
 Given the above, the `http.route` attribute will be inferred as */user/:subpath*
 
 ```elixir
-config :opentelemetry_httpoison,
+config :opentelemetrex_httpoison,
   infer_route: fn 
     %HTTPoison.Request{} = request -> URI.parse(request.url).path
   end

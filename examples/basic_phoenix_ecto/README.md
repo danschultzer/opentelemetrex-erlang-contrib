@@ -65,8 +65,8 @@ documentation first. For example:
 - [Already Using OpenTelemetry Collectors? | Lightstep Learning Portal](https://docs.lightstep.com/docs/already-using-collectors)
 - [OpenTelemetry quick start | New Relic Documentation](https://docs.newrelic.com/docs/more-integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-quick-start)
 
-[0]: https://hex.pm/packages/opentelemetry_phoenix
-[1]: https://hex.pm/packages/opentelemetry_ecto
+[0]: https://hex.pm/packages/opentelemetrex_phoenix
+[1]: https://hex.pm/packages/opentelemetrex_ecto
 [2]: https://hex.pm/packages/opentelemetry_exporter
 [3]: https://github.com/open-telemetry/opentelemetry-collector/
 [4]: https://zipkin.io/

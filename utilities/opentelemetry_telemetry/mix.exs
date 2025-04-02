@@ -14,7 +14,7 @@ defmodule OpentelemetryTelemetry.MixProject do
       deps: deps(Keyword.fetch!(config, :deps)),
       name: "Opentelemetry Telemetry",
       source_url:
-        "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/utilities/opentelemetry_telemetry",
+        "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/utilities/opentelemetry_telemetry",
       docs: [
         markdown_processor: ExDoc.Markdown.Earmark,
         main: "OpentelemetryTelemetry",
@@ -59,10 +59,10 @@ defmodule OpentelemetryTelemetry.MixProject do
       licenses: ["Apache-2.0"],
       links: %{
         "GitHub" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/utilities/opentelemetry_telemetry",
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/utilities/opentelemetry_telemetry",
         "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-        "OpenTelemetry Erlang Contrib" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib",
         "OpenTelemetry.io" => "https://opentelemetry.io"
       }
     ]

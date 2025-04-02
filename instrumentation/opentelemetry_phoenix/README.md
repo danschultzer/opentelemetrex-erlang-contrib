@@ -1,7 +1,7 @@
 # OpentelemetryPhoenix
 
 [![EEF Observability WG project](https://img.shields.io/badge/EEF-Observability-black)](https://github.com/erlef/eef-observability-wg)
-[![Hex.pm](https://img.shields.io/hexpm/v/opentelemetry_phoenix)](https://hex.pm/packages/opentelemetry_phoenix)
+[![Hex.pm](https://img.shields.io/hexpm/v/opentelemetry_phoenix)](https://hex.pm/packages/opentelemetrex_phoenix)
 ![Build Status](https://github.com/opentelemetry-beam/opentelemetry_phoenix/workflows/Tests/badge.svg)
 
 Telemetry handler that creates Opentelemetry spans from Phoenix events.
@@ -26,7 +26,7 @@ def deps do
 end
 ```
 
-[OpentelemetryBandit](https://hex.pm/packages/opentelemetry_bandit) or [OpentelemetryCowboy](https://hex.pm/packages/opentelemetry_cowboy) must be installed to capture the full
+[OpentelemetryBandit](https://hex.pm/packages/opentelemetrex_bandit) or [OpentelemetryCowboy](https://hex.pm/packages/opentelemetrex_cowboy) must be installed to capture the full
 request lifecycle. Phoenix only handles part of the request lifecycle which can lead
 to incomplete request durations and lost traces for requests terminated at the socket
 level or before reaching Phoenix.
