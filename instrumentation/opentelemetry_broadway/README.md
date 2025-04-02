@@ -1,8 +1,8 @@
 # opentelemetry_broadway
 
 [![EEF Observability WG project](https://img.shields.io/badge/EEF-Observability-black)](https://github.com/erlef/eef-observability-wg)
-[![Hex.pm](https://img.shields.io/hexpm/v/opentelemetry_cowboy)](https://hex.pm/packages/opentelemetry_cowboy)
-![Build Status](https://github.com/open-telemetry/opentelemetry-erlang-contrib/workflows/Erlang/badge.svg)
+[![Hex.pm](https://img.shields.io/hexpm/v/opentelemetrex_cowboy)](https://hex.pm/packages/opentelemetrex_cowboy)
+![Build Status](https://github.com/danschultzer/opentelemetrex-erlang-contrib/workflows/Erlang/badge.svg)
 
 OpenTelemetry tracing for [Broadway](https://elixir-broadway.org/) pipelines.
 
@@ -25,7 +25,7 @@ This library is available on Hex:
 ```elixir
 defp deps do
   [
-    {:opentelemetry_broadway, "~> 0.1"}
+    {:opentelemetrex_broadway, "~> 0.1"}
   ]
 end
 ```

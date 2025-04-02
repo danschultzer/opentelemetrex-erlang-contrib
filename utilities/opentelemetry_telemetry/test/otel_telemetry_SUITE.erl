@@ -13,7 +13,7 @@ all() -> [
          ].
 
 init_per_suite(Config) ->
-    ok = application:load(opentelemetry_telemetry),
+    ok = application:load(opentelemetrex_telemetry),
     ok = application:load(opentelemetry),
     application:set_env(opentelemetry, processors, [{otel_batch_processor, #{scheduled_delay_ms => 1}}]),
     Config.
@@ -24,14 +24,14 @@ end_per_suite(_Config) ->
 
 init_per_testcase(_, Config) ->
     {ok, _} = application:ensure_all_started(telemetry),
-    {ok, _} = application:ensure_all_started(opentelemetry_telemetry),
+    {ok, _} = application:ensure_all_started(opentelemetrex_telemetry),
     otel_batch_processor:set_exporter(otel_exporter_pid, self()),
     attach_event_handlers(),
     Config.
 
 end_per_testcase(_, Config) ->
     application:stop(telemetry),
-    application:stop(opentelemetry_telemetry),
+    application:stop(opentelemetrex_telemetry),
     application:stop(opentelemetry),
     Config.
 

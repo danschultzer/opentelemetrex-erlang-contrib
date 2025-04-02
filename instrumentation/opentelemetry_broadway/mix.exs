@@ -1,32 +1,25 @@
 defmodule OpentelemetryBroadway.MixProject do
   use Mix.Project
 
-  @version "0.2.0"
+  @version "0.1.0"
 
   def project do
     [
-      app: :opentelemetry_broadway,
+      app: :opentelemetrex_broadway,
       version: @version,
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       docs: [
-        source_url_pattern: "https://github.com/breakroom/opentelemetry_broadway/blob/main/%{path}#L%{line}",
+        source_url_pattern:
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/blob/main/instrumentation/opentelemetry_broadway/%{path}#L%{line}",
         main: "OpentelemetryBroadway",
         extras: ["README.md"]
       ],
       deps: deps(),
       elixirc_paths: elixirc_paths(Mix.env()),
-      package: [
-        name: "opentelemetry_broadway",
-        description: "OpenTelemetry tracing for Broadway",
-        maintainers: ["Tom Taylor"],
-        licenses: ["Apache-2.0"],
-        files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG*),
-        source_url: "https://github.com/breakroom/opentelemetry_broadway",
-        links: %{
-          "GitHub" => "https://github.com/breakroom/opentelemetry_broadway"
-        }
-      ]
+      package: package(),
+      source_url:
+        "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_broadway"
     ]
   end
 
@@ -34,6 +27,21 @@ defmodule OpentelemetryBroadway.MixProject do
   def application do
     [
       extra_applications: [:logger]
+    ]
+  end
+
+  defp package do
+    [
+      files: ~w(lib .formatter.exs mix.exs README* LICENSE* CHANGELOG*),
+      licenses: ["Apache-2.0"],
+      links: %{
+        "GitHub" =>
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_broadway",
+        "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/danschultzer/opentelemetrex-erlang-contrib",
+        "OpenTelemetry.io" => "https://opentelemetry.io"
+      }
     ]
   end
 

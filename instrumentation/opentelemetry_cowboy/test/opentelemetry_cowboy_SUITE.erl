@@ -65,7 +65,7 @@ init_per_testcase(_, Config) ->
     {ok, _} = application:ensure_all_started(telemetry),
     {ok, _} = application:ensure_all_started(opentelemetry),
     {ok, _} = application:ensure_all_started(opentelemetry_telemetry),
-    {ok, _} = application:ensure_all_started(opentelemetry_cowboy),
+    {ok, _} = application:ensure_all_started(opentelemetrex_cowboy),
 
     otel_batch_processor:set_exporter(otel_exporter_pid, self()),
 

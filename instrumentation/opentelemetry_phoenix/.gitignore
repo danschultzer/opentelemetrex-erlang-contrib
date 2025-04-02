@@ -20,7 +20,7 @@ erl_crash.dump
 *.ez
 
 # Ignore package tarball (built via "mix hex.build").
-opentelemetry_phoenix-*.tar
+opentelemetrex_phoenix-*.tar
 
 test/support/deps/
 test/support/_build/

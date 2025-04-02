@@ -92,7 +92,7 @@ peek_from_tracer_stack(TracerId) ->
         [SpanCtxSet | _Rest] ->
             SpanCtxSet;
         [] ->
-            ?LOG_DEBUG("`opentelemetry_telemetry` span ctx tracer stack for "
+            ?LOG_DEBUG("`opentelemetrex_telemetry` span ctx tracer stack for "
                        "TracerId ~p in Pid ~p is empty.", [TracerId, self()]),
             undefined
     end.
@@ -114,7 +114,7 @@ pop_from_tracer_stack(TracerId) ->
             erlang:put({otel_telemetry, TracerId}, Rest),
             SpanCtxSet;
         [] ->
-            ?LOG_DEBUG("`opentelemetry_telemetry` span ctx tracer stack for "
+            ?LOG_DEBUG("`opentelemetrex_telemetry` span ctx tracer stack for "
                        "TracerId ~p in Pid ~p is empty.", [TracerId, self()]),
             undefined
     end.

@@ -5,13 +5,13 @@ create `OpenTelemetry` spans from Oban events.
 
 ## Installation
 
-The package can be installed by adding `opentelemetry_oban` to your list of
+The package can be installed by adding `opentelemetrex_oban` to your list of
 dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:opentelemetry_oban, "~> 1.0"}
+    {:opentelemetrex_oban, "~> 1.0"}
   ]
 end
 ```

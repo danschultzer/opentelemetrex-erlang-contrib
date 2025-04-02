@@ -1,6 +1,6 @@
 defmodule OpentelemetryEcto.TestRepo do
   use Ecto.Repo,
-    otp_app: :opentelemetry_ecto,
+    otp_app: :opentelemetrex_ecto,
     adapter: Ecto.Adapters.Postgres,
-    telemetry_prefix: [:opentelemetry_ecto, :test_repo]
+    telemetry_prefix: [:opentelemetrex_ecto, :test_repo]
 end

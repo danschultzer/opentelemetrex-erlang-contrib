@@ -5,13 +5,13 @@ create `OpenTelemetry` spans from Finch events.
 
 ## Installation
 
-The package can be installed by adding `opentelemetry_finch` to your list of
+The package can be installed by adding `opentelemetrex_finch` to your list of
 dependencies in `mix.exs`:
 
 ```elixir
   def deps do
     [
-      {:opentelemetry_finch, "~> 0.1"}
+      {:opentelemetrex_finch, "~> 0.1"}
     ]
   end
 ```
@@ -60,5 +60,5 @@ In your application start:
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/opentelemetry_finch](https://hexdocs.pm/opentelemetry_finch).
+be found at [https://hexdocs.pm/opentelemetrex_finch](https://hexdocs.pm/opentelemetrex_finch).
 

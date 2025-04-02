@@ -4,13 +4,13 @@ This library uses [Telemetry](https://github.com/beam-telemetry/telemetry/) even
 
 ## Installation
 
-Add `opentelemetry_xandra` to your list of dependencies in `mix.exs`:
+Add `opentelemetrex_xandra` to your list of dependencies in `mix.exs`:
 
 ```elixir
 defp deps do
   [
     # Other opentelemetry_* deps...,
-    {:opentelemetry_xandra, "~> 0.1"}
+    {:opentelemetrex_xandra, "~> 0.1"}
   ]
 end
 ```
