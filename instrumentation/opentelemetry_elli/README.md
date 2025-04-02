@@ -7,7 +7,7 @@ Elli middleware for OpenTelemetry instrumentation.
 ## Setup and Configuration
 
 ``` erlang
-{deps, [opentelemetry_elli]}.
+{deps, [opentelemetrex_elli]}.
 ```
 
 While using the `elli_middleware` callback, place `oc_elli_middelware` as the first module to be called in the list of handlers:
@@ -20,10 +20,10 @@ While using the `elli_middleware` callback, place `oc_elli_middelware` as the fi
 
 
 
-OpenTelemetry's [HTTP Semantic Conventions](https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/data-http.md#http-server) for a server details the attributes added to a Span automatically by using this middleware. One such attribute must be set in your `sys.config` under the `opentelemetry_elli` application like:
+OpenTelemetry's [HTTP Semantic Conventions](https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/data-http.md#http-server) for a server details the attributes added to a Span automatically by using this middleware. One such attribute must be set in your `sys.config` under the `opentelemetrex_elli` application like:
 
 ``` erlang
-{opentelemetry_elli, [{server_name, <<"my-http-server">>}]}.
+{opentelemetrex_elli, [{server_name, <<"my-http-server">>}]}.
 ```
 
 It is strongly recommended to set this environment variable so the attribute can be included:
@@ -73,7 +73,7 @@ be added to `sys.config` to exclude the URLs `/health` and `/metrics`:
 
 ``` erlang
 
-{opentelemetry_elli, [{excluded_paths, ["/health", "/metrics"]}]}
+{opentelemetrex_elli, [{excluded_paths, ["/health", "/metrics"]}]}
 ```
 
 An OS environment variable, `OTEL_ELLI_EXCLUDED_URLS`, is also read and is a

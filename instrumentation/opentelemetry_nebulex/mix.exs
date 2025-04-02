@@ -5,7 +5,7 @@ defmodule OpentelemetryNebulex.MixProject do
 
   def project do
     [
-      app: :opentelemetry_nebulex,
+      app: :opentelemetrex_nebulex,
       description: description(),
       version: @version,
       elixir: "~> 1.11",
@@ -14,10 +14,10 @@ defmodule OpentelemetryNebulex.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
       source_url:
-        "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_nebulex",
+        "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_nebulex",
       docs: [
         source_url_pattern:
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/blob/main/instrumentation/opentelemetry_nebulex/%{path}#L%{line}",
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/blob/main/instrumentation/opentelemetry_nebulex/%{path}#L%{line}",
         main: "OpentelemetryNebulex",
         extras: ["README.md"]
       ]
@@ -34,10 +34,10 @@ defmodule OpentelemetryNebulex.MixProject do
       licenses: ["Apache-2.0"],
       links: %{
         "GitHub" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_nebulex",
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_nebulex",
         "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-        "OpenTelemetry Erlang Contrib" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib",
         "OpenTelemetry.io" => "https://opentelemetry.io"
       }
     ]

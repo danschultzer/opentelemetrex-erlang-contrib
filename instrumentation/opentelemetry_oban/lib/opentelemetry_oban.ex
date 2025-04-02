@@ -34,7 +34,7 @@ defmodule OpentelemetryOban do
   Note that if you don't trace plugins, but inside the plugins, there are spans
   from other instrumentation libraries (e.g. ecto) then these will still be
   traced. This setting controls only the spans that are created by
-  opentelemetry_oban.
+  OpentelemetryOban.
   """
   @spec setup() :: :ok
   def setup(opts \\ []) do

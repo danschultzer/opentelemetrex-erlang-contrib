@@ -20,7 +20,7 @@ groups() ->
                            error_response, excluded_paths]}].
 
 init_per_suite(Config) ->
-    ok = application:load(opentelemetry_elli),
+    ok = application:load(opentelemetrex_elli),
     ok = application:load(opentelemetry),
 
     application:set_env(opentelemetry_elli, excluded_paths, ["/hello/exclude"]),

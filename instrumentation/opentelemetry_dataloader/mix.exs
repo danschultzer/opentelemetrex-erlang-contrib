@@ -5,7 +5,7 @@ defmodule OpentelemetryDataloader.MixProject do
 
   def project do
     [
-      app: :opentelemetry_dataloader,
+      app: :opentelemetrex_dataloader,
       description: "Trace Dataloader with OpenTelemetry.",
       version: @version,
       elixir: "~> 1.14",
@@ -15,10 +15,10 @@ defmodule OpentelemetryDataloader.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
       source_url:
-        "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_dataloader",
+        "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_dataloader",
       docs: [
         source_url_pattern:
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/blob/main/instrumentation/opentelemetry_dataloader/%{path}#L%{line}",
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/blob/main/instrumentation/opentelemetry_dataloader/%{path}#L%{line}",
         main: "OpentelemetryDataloader",
         extras: ["README.md"]
       ]
@@ -31,10 +31,10 @@ defmodule OpentelemetryDataloader.MixProject do
       licenses: ["Apache-2.0"],
       links: %{
         "GitHub" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_dataloader",
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_dataloader",
         "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-        "OpenTelemetry Erlang Contrib" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib",
         "OpenTelemetry.io" => "https://opentelemetry.io"
       }
     ]

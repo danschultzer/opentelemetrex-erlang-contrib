@@ -1,14 +1,12 @@
 defmodule OpentelemetryXandra.MixProject do
   use Mix.Project
 
-  @version "0.2.0"
+  @version "0.1.0"
   @description "Trace Xandra queries with OpenTelemetry."
-  @repo_url "https://github.com/open-telemetry/opentelemetry-erlang-contrib"
-  @folder_url "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_xandra"
 
   def project do
     [
-      app: :opentelemetry_xandra,
+      app: :opentelemetrex_xandra,
       description: @description,
       version: @version,
       elixir: "~> 1.14",
@@ -16,29 +14,39 @@ defmodule OpentelemetryXandra.MixProject do
       deps: deps(),
 
       # Docs
-      source_url: @folder_url,
+      source_url:
+        "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_xandra",
       docs: [
-        source_url_pattern: "#{@folder_url}/%{path}#L%{line}",
+        source_url_pattern:
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_xandra/%{path}#L%{line}",
         main: "OpentelemetryXandra",
         extras: ["README.md"]
       ],
 
       # Hex
-      package: [
-        licenses: ["Apache-2.0"],
-        links: %{
-          "GitHub" => @folder_url,
-          "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-          "OpenTelemetry Erlang Contrib" => @repo_url,
-          "OpenTelemetry.io" => "https://opentelemetry.io"
-        }
-      ]
+      package: package(),
+      source_url:
+        "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_xandra"
     ]
   end
 
   def application do
     [
       extra_applications: []
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["Apache-2.0"],
+      links: %{
+        "GitHub" =>
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_xandra",
+        "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib",
+        "OpenTelemetry.io" => "https://opentelemetry.io"
+      }
     ]
   end
 

@@ -23,23 +23,23 @@ within your application code where the OpenTelemery API library should be levera
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `opentelemetry_telemetry` to your list of dependencies:
+by adding `opentelemetrex_telemetry` to your list of dependencies:
 
 ```erlang
 {deps, [
-  {opentelemetry_telemetry, "~> 1.0"}
+  {opentelemetrex_telemetry, "~> 1.0"}
 ]}.
 ```
 
 ```elixir
 def deps do
   [
-    {:opentelemetry_telemetry, "~> 1.0"}
+    {:opentelemetrex_telemetry, "~> 1.0"}
   ]
 end
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/opentelemetry_telemetry](https://hexdocs.pm/opentelemetry_telemetry).
+be found at [https://hexdocs.pm/opentelemetrex_telemetry](https://hexdocs.pm/opentelemetrex_telemetry).
 

@@ -1,7 +1,7 @@
 # Phoenix + Ecto OpenTelemetry Example
 
 This is a example repository that demo how to setup OpenTelemetry for Phoenix application
-with [`opentelemetry_phoenix`][0] and [`opentelemetry_ecto`][1].
+with [`opentelemetrex_phoenix`][0] and [`opentelemetrex_ecto`][1].
 
 Here, we are using [`opentelemetry_exporter`][2] to export the traces to [
 OpenTelemetry Collector][3]. The collector in turn export the traces to [Zipkin][4] and [
@@ -65,8 +65,8 @@ documentation first. For example:
 - [Already Using OpenTelemetry Collectors? | Lightstep Learning Portal](https://docs.lightstep.com/docs/already-using-collectors)
 - [OpenTelemetry quick start | New Relic Documentation](https://docs.newrelic.com/docs/more-integrations/open-source-telemetry-integrations/opentelemetry/opentelemetry-quick-start)
 
-[0]: https://hex.pm/packages/opentelemetry_phoenix
-[1]: https://hex.pm/packages/opentelemetry_ecto
+[0]: https://hex.pm/packages/opentelemetrex_phoenix
+[1]: https://hex.pm/packages/opentelemetrex_ecto
 [2]: https://hex.pm/packages/opentelemetry_exporter
 [3]: https://github.com/open-telemetry/opentelemetry-collector/
 [4]: https://zipkin.io/

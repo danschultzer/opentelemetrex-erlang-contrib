@@ -10,11 +10,11 @@ import Config
 
 # You can configure your application as:
 #
-#     config :opentelemetry_redix, key: :value
+#     config :opentelemetrex_redix, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:opentelemetry_redix, :key)
+#     Application.get_env(:opentelemetrex_redix, :key)
 #
 # You can also configure a third-party app:
 #

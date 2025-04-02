@@ -14,7 +14,7 @@ defmodule OpentelemetryProcessPropagator.MixProject do
       deps: deps(Keyword.fetch!(config, :deps)),
       name: "Opentelemetry Process Propagator",
       source_url:
-        "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/propagators/opentelemetry_process_propagator",
+        "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/propagators/opentelemetry_process_propagator",
       docs: [
         markdown_processor: ExDoc.Markdown.Earmark,
         main: "OpentelemetryProcessPropagator",
@@ -59,9 +59,10 @@ defmodule OpentelemetryProcessPropagator.MixProject do
       licenses: ["Apache-2.0"],
       links: %{
         "GitHub" =>
-          "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/propagators/opentelemetry_process_propagator",
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/propagators/opentelemetry_process_propagator",
         "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-        "OpenTelemetry Erlang Contrib" => "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+        "OpenTelemetry Erlang Contrib (OpenTelemetrex Fork)" =>
+          "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib",
         "OpenTelemetry.io" => "https://opentelemetry.io"
       }
     ]

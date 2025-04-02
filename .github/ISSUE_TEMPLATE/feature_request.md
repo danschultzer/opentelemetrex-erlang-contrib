@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Is your feature request related to a problem? Please describe.**
-Please consider opening a [Discussion](https://github.com/open-telemetry/opentelemetry-erlang-contrib/discussions) for general ideas or questions.
+Please consider opening a [Discussion](https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/discussions) for general ideas or questions.
 
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 

@@ -4,17 +4,17 @@ Implements an Id Generator compatible with [AWS X-Ray TraceId](https://docs.aws.
 
 ## Installation
 
-The package can be installed by adding `opentelemetry_xray` to your list of
+The package can be installed by adding `opentelemetrex_xray` to your list of
 dependencies in `mix.exs` for elixir and `rebar.config` for erlang :
 
 ```erlang
-{deps, [opentelemetry_xray]}.
+{deps, [opentelemetrex_xray]}.
 ```
 
 ```elixir
 def deps do
   [
-    {:opentelemetry_xray, "~> 0.1"}
+    {:opentelemetrex_xray, "~> 0.1"}
   ]
 end
 ```

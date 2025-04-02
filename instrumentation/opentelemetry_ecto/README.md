@@ -12,7 +12,7 @@ top-level supervisor starts, passing the Telemetry prefix of the Ecto repo you w
 OpentelemetryEcto.setup([:blog, :repo])
 ```
 
-See [the documentation for `OpentelemetryEcto.setup/2`](https://hexdocs.pm/opentelemetry_ecto/OpentelemetryEcto.html#setup/2) for additional options that
+See [the documentation for `OpentelemetryEcto.setup/2`](https://hexdocs.pm/opentelemetrex_ecto/OpentelemetryEcto.html#setup/2) for additional options that
 may be supplied.
 
 ## Installation
@@ -22,7 +22,7 @@ Add the package to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:opentelemetry_ecto, "~> 1.0"}
+    {:opentelemetrex_ecto, "~> 1.0"}
   ]
 end
 ```
@@ -32,9 +32,4 @@ end
 | OpentelemetryEcto Version | OTel Version | Notes |
 | :------------------------ | :----------- | :---- |
 |                           |              |       |
-| v0.1.0                    | <= v.0.5.0   |       |
-| v1.0.0-rc.1               | v1.0.0-rc.1  |       |
-| v1.0.0-rc.2               | v1.0.0-rc.2  |       |
-| v1.0.0-rc.3               | v1.0.0-rc.3  |       |
-| v1.0.0-rc.4               | v1.0.0-rc.4  |       |
 | v1.0                      | v1.0         |       |

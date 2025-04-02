@@ -8,7 +8,7 @@ are also observed to track Redis instance address.
 
 ## Note on Redix integration
 
-A sidecar process runs under `opentelemetry_redix` application to track
+A sidecar process runs under `opentelemetrex_redix` application to track
 Redix connection information to inside command spans. As a requirement, all
 Redis connections should start after this application.
 
@@ -23,20 +23,20 @@ to the following:
 ```elixir
   def application do
     [
-      extra_applications: [:opentelemetry_redix, :hammer_backend_redis]
+      extra_applications: [:opentelemetrex_redix, :hammer_backend_redis]
     ]
   end
 ```
 
 ## Installation
 
-The package can be installed by adding `opentelemetry_redix` to your list of
+The package can be installed by adding `opentelemetrex_redix` to your list of
 dependencies in `mix.exs`:
 
 ```elixir
   def deps do
     [
-      {:opentelemetry_redix, "~> 0.1"}
+      {:opentelemetrex_redix, "~> 0.1"}
     ]
   end
 ```
@@ -50,5 +50,5 @@ dependencies in `mix.exs`:
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/opentelemetry_redix](https://hexdocs.pm/opentelemetry_redix).
+be found at [https://hexdocs.pm/opentelemetrex_redix](https://hexdocs.pm/opentelemetrex_redix).
 

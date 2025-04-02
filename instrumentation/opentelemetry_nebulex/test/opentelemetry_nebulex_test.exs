@@ -17,30 +17,30 @@ defmodule OpentelemetryNebulexTest do
 
   defmodule Local do
     use Nebulex.Cache,
-      otp_app: :opentelemetry_nebulex,
+      otp_app: :opentelemetrex_nebulex,
       adapter: Nebulex.Adapters.Local
   end
 
   defmodule Partitioned do
     use Nebulex.Cache,
-      otp_app: :opentelemetry_nebulex,
+      otp_app: :opentelemetrex_nebulex,
       adapter: Nebulex.Adapters.Partitioned
   end
 
   defmodule Multilevel do
     use Nebulex.Cache,
-      otp_app: :opentelemetry_nebulex,
+      otp_app: :opentelemetrex_nebulex,
       adapter: Nebulex.Adapters.Multilevel
 
     defmodule L1 do
       use Nebulex.Cache,
-        otp_app: :opentelemetry_nebulex,
+        otp_app: :opentelemetrex_nebulex,
         adapter: Nebulex.Adapters.Local
     end
 
     defmodule L2 do
       use Nebulex.Cache,
-        otp_app: :opentelemetry_nebulex,
+        otp_app: :opentelemetrex_nebulex,
         adapter: Nebulex.Adapters.Partitioned
     end
   end

@@ -28,7 +28,7 @@ The motivation for this fork is to allow for rapid changes to comply with specs 
 
 ---
 [![EEF Observability WG project](https://img.shields.io/badge/EEF-Observability-black)](https://github.com/erlef/eef-observability-wg)
-![Elixir](https://github.com/danschultzer/opentelemetrex-erlang-contrib/actions/workflows/elixir.yml/badge.svg?branch=main)
+![Elixir](https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/actions/workflows/elixir.yml/badge.svg?branch=main)
 
 ## About this project
 
@@ -40,10 +40,10 @@ core distribution of the API and SDK.
 
 OpenTelemetry can collect tracing data using instrumentation. Vendors/Users can also create and use their own. Currently, OpenTelemetry supports automatic tracing for:
 
-- [opentelemetry-cowboy](https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_cowboy)
-- [opentelemetry-phoenix](https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_phoenix)
-- [opentelemetry-ecto](https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_ecto)
-- [opentelemetry-req](https://github.com/danschultzer/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_req)
+- [opentelemetry-cowboy](https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_cowboy)
+- [opentelemetry-phoenix](https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_phoenix)
+- [opentelemetry-ecto](https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_ecto)
+- [opentelemetry-req](https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_req)
 
 ## Supported Runtimes
 
@@ -61,7 +61,7 @@ it can for the code in the library, but must at least support versions outlined 
 
 - For more information on OpenTelemetry, see [opentelemetry.io](https://opentelemetry.io).
 - For conventions used in OpenTelemetry traces, see the following [readme](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/README.md).
-- For help or feedback on this project, join us in [GitHub Discussions](https://github.com/danschultzer/opentelemetrex-erlang-contrib/discussions), `#otel-erlang-elixir` channel in the [CNCF slack](https://slack.cncf.io/), and `#opentelemetry` channel in the [Elixir Lang slack](https://elixir-slack.community/)
+- For help or feedback on this project, join us in [GitHub Discussions](https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/discussions), `#otel-erlang-elixir` channel in the [CNCF slack](https://slack.cncf.io/), and `#opentelemetry` channel in the [Elixir Lang slack](https://elixir-slack.community/)
 - Erlang SIG [community page](https://github.com/open-telemetry/community#special-interest-groups)
 
 ## License

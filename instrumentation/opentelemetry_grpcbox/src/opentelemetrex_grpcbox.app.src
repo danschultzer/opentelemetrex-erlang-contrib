@@ -1,6 +1,6 @@
-{application, opentelemetry_grpcbox,
+{application, opentelemetrex_grpcbox,
  [{description, "grpcbox interceptor for OpenTelemetry instrumentation"},
-  {vsn, "0.3.0"},
+  {vsn, "0.1.0"},
   {registered, []},
   {applications,
    [kernel,
@@ -12,5 +12,5 @@
   {modules, []},
 
   {licenses, ["Apache-2.0"]},
-  {links, [{"GitHub", "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_grpcbox"}]}
+  {links, [{"GitHub", "https://github.com/open-telemetrex/opentelemetrex-erlang-contrib/tree/main/instrumentation/opentelemetry_grpcbox"}]}
  ]}.
