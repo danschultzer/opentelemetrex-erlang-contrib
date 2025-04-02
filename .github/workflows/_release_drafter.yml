@@ -1,0 +1,22 @@
+name: Draft release
+on:
+  workflow_call:
+    inputs:
+      package:
+        description: The package name
+        required: true
+        type: string
+
+jobs:
+  release-drafter:
+    name: "[${{ inputs.package }}-release] Draft release"
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: release-drafter/release-drafter@v6
+        with:
+          config-name: release-drafter-templates/${{ inputs.package }}.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
