@@ -34,11 +34,11 @@
 **All Projects**
 
 - [ ] Label created (maintainers)
-- [ ] [labeler.yml](https://github.com/open-telemetry/opentelemetry-erlang-contrib/blob/main/.github/labeler.yml) updated
+- [ ] [labeler.yml](https://github.com/danschultzer/opentelemetrex-erlang-contrib/blob/main/.github/labeler.yml) updated
 - [ ] CI
   - [ ] Elixir or Erlang language file is updated
   - [ ] Test strategy should use the matrix strategy with all supported language/OTP combinations
   - [ ] The job is scoped to only run for relevant code changes
-- [ ] [Codeowners](https://github.com/open-telemetry/opentelemetry-erlang-contrib/blob/main/CODEOWNERS) adds scoped ownership for project maintainers
+- [ ] [Codeowners](https://github.com/danschultzer/opentelemetrex-erlang-contrib/blob/main/CODEOWNERS) adds scoped ownership for project maintainers
 - [ ] License file (Apache2 - copyright to OpenTelemetry Authors)
 - [ ] All code complies with the [Otel Specification](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification) and Otel Semantic Conventions - [Trace](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/trace/semantic_conventions) [Metrics](https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/metrics/semantic_conventions)

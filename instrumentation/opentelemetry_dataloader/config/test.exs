@@ -1,9 +1,9 @@
 import Config
 
-config :opentelemetry_dataloader,
+config :opentelemetrex_dataloader,
   ecto_repos: [OpentelemetryDataloader.TestRepo]
 
-config :opentelemetry_dataloader, OpentelemetryDataloader.TestRepo,
+config :opentelemetrex_dataloader, OpentelemetryDataloader.TestRepo,
   hostname: "localhost",
   username: "postgres",
   password: "postgres",

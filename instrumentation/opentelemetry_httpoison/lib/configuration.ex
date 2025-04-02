@@ -59,7 +59,7 @@ defmodule OpentelemetryHTTPoison.Configuration do
         &OpentelemetryHTTPoison.URI.infer_route_from_request/1
       )
 
-  def get(:ot_attributes), do: Application.get_env(:opentelemetry_httpoison, :ot_attributes, [])
+  def get(:ot_attributes), do: Application.get_env(:opentelemetrex_httpoison, :ot_attributes, [])
 
   defp set(key, value), do: Application.put_env(:opentelemetry_httpoison, key, value)
 
