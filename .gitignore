@@ -15,7 +15,6 @@ deps
 _build/
 _checkouts/
 
-_*
 *.swp
 *.swo
 .erlang.cookie
