@@ -6,4 +6,4 @@ Forked from [`:opentelemetry_oban` `1.1.1`](https://github.com/open-telemetry/op
 
 ### Changed
 
-- Initial release
+- Updated to support `:opentelemetry_semantic_conventions` `1.27`
