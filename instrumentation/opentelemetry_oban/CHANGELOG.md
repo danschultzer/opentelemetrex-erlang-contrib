@@ -7,3 +7,4 @@ Forked from [`:opentelemetry_oban` `1.1.1`](https://github.com/open-telemetry/op
 ### Changed
 
 - Updated to support `:opentelemetry_semantic_conventions` `1.27`
+- Set telemetry span attributes for all Oban telemetry events
